@@ -2,7 +2,7 @@
 
 random_set_seed(0)
 
-bubble_buff_max = 90			//Delay in between bubble generation
+bubble_buff_max = 600			//Delay in between bubble generation
 bubble_buff = bubble_buff_max
 bubbles = [obj_bubble2, obj_bubble2, obj_bubble2, obj_bubble2, obj_bubble3, obj_bubble3, obj_bubble1, obj_bubble1, obj_bubble1]	//The bubbles that can be generated
 
@@ -12,18 +12,18 @@ view_enabled = true
 view_visible[0] = true
 view_xport[0] = 0
 view_yport[0] = 0
-view_wport[0] = 683
+view_wport[0] = 680
 view_hport[0] = 768
 
 view_visible[1] = true
-view_xport[1] = room_width div 2
+view_xport[1] = room_width div 2 + 3
 view_yport[1] = 0
 view_wport[1] = 683
 view_hport[1] = 768
 
 //Create the player object
-player1 = instance_create_layer(room_width div 2, room_height - 640, "lay_instances", obj_player1)
-player2 = instance_create_layer(room_width div 2, room_height - 580, "lay_instances", obj_player2)
+player1 = instance_create_layer(room_width div 2 - 64, room_height - 64, "lay_instances", obj_player1)
+player2 = instance_create_layer(room_width div 2, room_height - 64, "lay_instances", obj_player2)
 
 //Create a camera
 camera_width = 1366		//Current view width

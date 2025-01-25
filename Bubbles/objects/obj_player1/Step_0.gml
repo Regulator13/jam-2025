@@ -13,21 +13,15 @@ if keyboard_check_pressed(ord("W")){
 	//Check that there is ground beneath the player's feet, depending of their rotation
 	if place_meeting(x, y + 1, par_static) or
 	place_meeting(x, y + 1, par_dynamic){
-		phy_speed_x += lengthdir_x(-jump_power, phy_rotation)
-		phy_speed_y += lengthdir_y(jump_power, phy_rotation)
-		phy_rotation = 270
+		//If lying sideways, right himself
+		if (phy_rotation > 180 - 5 and phy_rotation < 180 + 5) or (phy_rotation > 360 - 5 and phy_rotation < 360 + 5){
+			phy_rotation = 270
+		}
+		else{
+			phy_speed_x += lengthdir_x(-jump_power, phy_rotation)
+			phy_speed_y += lengthdir_y(jump_power, phy_rotation)
+		}
 	}
-	/*
-	//If there isn't ground beneath their feet, check if the player is on it's side
-	else if place_meeting(x + lengthdir_x(1, phy_rotation - 90), y + lengthdir_y(1, phy_rotation - 90), par_static) or
-	place_meeting(x + lengthdir_x(1, phy_rotation - 90), y + lengthdir_y(1, phy_rotation - 90), par_dynamic){
-		phy_rotation = 270
-	}
-	else if place_meeting(x + lengthdir_x(1, phy_rotation - 270), y + lengthdir_y(1, phy_rotation - 270), par_static) or
-	place_meeting(x + lengthdir_x(1, phy_rotation - 270), y + lengthdir_y(1, phy_rotation - 270), par_dynamic){
-		phy_rotation = 270
-	}
-	*/
 }
 
 event_inherited()
