@@ -1,0 +1,2 @@
+part_emitter_region(global.particle_system, global.emit_burst, x-200, x+200, y, y, ps_shape_line, ps_distr_linear) //Set emitter region
+part_emitter_burst(global.particle_system, global.emit_burst, global.p_bubble, 5) //Create the particles in a burst

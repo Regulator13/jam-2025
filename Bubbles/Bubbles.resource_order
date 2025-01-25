@@ -24,5 +24,9 @@
     {"name":"par_static","order":4,"path":"objects/par_static/par_static.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
+    {"name":"spr_alternate2","order":3,"path":"sprites/spr_alternate2/spr_alternate2.yy",},
+    {"name":"spr_bubble","order":2,"path":"sprites/spr_bubble/spr_bubble.yy",},
+    {"name":"spr_foam","order":4,"path":"sprites/spr_foam/spr_foam.yy",},
+    {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
   ],
 }
