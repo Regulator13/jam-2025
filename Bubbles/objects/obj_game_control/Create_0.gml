@@ -1,6 +1,10 @@
 /// @description Setup the game
 
-randomize()
+random_set_seed(0)
+
+bubble_buff_max = 90			//Delay in between bubble generation
+bubble_buff = bubble_buff_max
+bubbles = [obj_bubble2, obj_bubble2, obj_bubble2, obj_bubble2, obj_bubble3, obj_bubble3, obj_bubble1, obj_bubble1, obj_bubble1]	//The bubbles that can be generated
 
 #region Views
 //Setup viewport
