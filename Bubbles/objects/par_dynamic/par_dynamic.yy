@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"par_bounce",
-  "eventList":[],
+  "%Name":"par_dynamic",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"par_static","path":"objects/par_static/par_static.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"par_bounce",
+  "name":"par_dynamic",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
