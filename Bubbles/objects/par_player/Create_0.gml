@@ -7,3 +7,5 @@ grav_force = .15
 phy_rotation = 270		//Set the player to be vertical
 
 phy_fixed_rotation = false
+image_speed = 0
+image_angle = 45
